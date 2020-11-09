@@ -1,0 +1,136 @@
+/*code*/
+/*@font-face {
+	font-family: 'Vegur';
+	src: url('../fonts/Vegur-Regular-webfont.woff') format('woff');
+	font-style: normal;
+}
+@font-face {
+	font-family: 'VegurBold';
+	src: url('../fonts/Vegur-Bold-webfont.woff');
+	font-weight: bold;
+}*/
+.bloc_top {
+  height: 300px;
+  margin-top: 15px;
+}
+
+.bloc_top img {
+  width: 100%;
+}
+
+.bloc_top .points {
+  height: 50px;
+  background: red;
+}
+
+.bloc_centre {
+  height: 400px;
+  background-color: #e8ddca;
+}
+
+.bloc_centre .logo_centre {
+  width: 20%;
+  height: 20%;
+  margin-left: 40%;
+  padding-top: 5%;
+}
+
+.bloc_centre .logo_centre img {
+  width: 100%;
+}
+
+.bloc_centre .picto {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  margin-left: 20%;
+}
+
+.bloc_centre .picto .partie1 img, .bloc_centre .picto .partie2 img {
+  padding-left: 14%;
+}
+
+.bloc_centre .picto .partie1 .phovolt {
+  -webkit-transform: rotate(-80deg);
+          transform: rotate(-80deg);
+}
+
+.bloc_centre .blocTxt_1, .bloc_centre .blocTxt_2 {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  height: 200px;
+  background-color: red;
+}
+
+.bloc_centre .blocTxt_1 h1, .bloc_centre .blocTxt_2 h1 {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 2%;
+}
+
+.bloc_centre .blocTxt_1 p, .bloc_centre .blocTxt_2 p {
+  margin-top: 3%;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.bloc_centre .bouton1 {
+  margin-top: 3%;
+  margin-bottom: 8%;
+  height: 80px;
+  border-radius: 20px;
+  background-color: #6d6f71;
+}
+
+.bloc_centre .bouton1 p {
+  padding-top: 5%;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+.bloc_centre .bouton2 {
+  margin-top: 3%;
+  margin-bottom: 8%;
+  margin-left: 33%;
+  height: 50px;
+  width: 33%;
+  border-radius: 30px;
+  background-color: #fcb731;
+}
+
+.bloc_centre .bouton2 p {
+  padding-top: 10%;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.bloc_centre .actu {
+  height: 130px;
+  background-color: #647b22;
+}
+
+.bloc_centre .demarche {
+  height: 130px;
+  background-color: #647b22;
+  margin-top: 2%;
+}
+
+.bloc_centre .installations {
+  height: 130px;
+  background-color: #647b22;
+  margin-top: 2%;
+}
+
+.bloc_centre .temoignages {
+  height: 130px;
+  background-color: #647b22;
+  margin-top: 2%;
+}
+
+/*# sourceMappingURL=scss_index.css.map */
