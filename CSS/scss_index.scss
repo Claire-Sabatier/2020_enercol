@@ -1,0 +1,424 @@
+
+$vert : rgb(179,207,67); 
+$orange : rgb(252,183,49); 
+$vert_fonce : rgb(100,123,34);
+$marron : rgb(195,165,117);
+$bleu : rgb(0,175,236); 
+$beige : rgb(232,221,202); 
+$gris_noir : rgb(109,111,113);
+
+/*code*/
+
+/*@font-face {
+	font-family: 'Vegur';
+	src: url('../fonts/Vegur-Regular-webfont.woff') format('woff');
+	font-style: normal;
+}
+@font-face {
+	font-family: 'VegurBold';
+	src: url('../fonts/Vegur-Bold-webfont.woff');
+	font-weight: bold;
+}*/
+
+.bloc_top{
+	height: 300px;
+	margin-top: 15px;
+
+	.img{
+		background-image: url(../img/imgTop.jpg);
+		background-size: contain;
+		background-repeat: no-repeat;
+		width: 100%;	
+		height: 250px;
+		
+	}
+	.points{
+		height: 50px;
+		background-image: url(../img/points.svg);
+	}
+
+}
+
+.bloc_centre{
+	height: 400px; 
+	/*background-color: $beige;*/
+
+	.logo_centre{
+		height: 50px; 
+		width: 80px;
+		background-image: url(../MAQUETTES/logo_ss_texte.svg);
+		background-size: contain;
+		background-repeat: no-repeat;
+		margin-left: 40%;
+		padding-top: 5%;
+		
+	}
+	
+
+	.picto{
+		
+		margin-left: 8%;
+
+		.partie1 {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+
+			.coop{
+				height: 100px; 
+				width: 100px;
+				background-image: url(../img/picto_coop.svg);
+				background-size: contain;
+				background-repeat: no-repeat;
+			}
+
+			.photovolt{
+				height: 100px; 
+				width: 100px;
+				
+				background-image: url(../img/picto_photovoltaique.svg);
+				background-size: contain;
+				background-repeat: no-repeat;
+				transform: rotate(-80deg);				
+			}
+			
+		}
+		
+		.partie2 {
+			margin-top: 5%;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+
+			.prod{
+				height: 100px; 
+				width: 100px;
+				background-image: url(../img/picto_production_energie.svg);
+				background-size: contain;
+				background-repeat: no-repeat;
+			}
+
+			.capital{
+				height: 100px; 
+				width: 100px;
+				
+				background-image: url(../img/picto_capital.svg);
+				background-size: contain;
+				background-repeat: no-repeat;
+							
+			}
+		}
+	}
+
+	
+	.blocTxt_1, .blocTxt_2{
+		display: flex;
+		flex-direction: column;
+		height: 220px; 
+		background-image:url(../img/points.svg);
+		
+		margin-top: 10%;
+		h1{
+			text-align: center;
+			font-size: 20px;
+			margin-top: 2%;
+			font-weight: bold;
+			color: $gris_noir;
+		}
+		p{
+			margin-top: 3%;
+			margin-left: 3%;
+			margin-right: 3%;
+		}
+	}
+	.blocTxt_2{
+		.plus{
+			height: 30px;
+			width: 30px;
+			margin-left: 95%;
+			font-size: 24px;
+			font-weight: bolder;
+			color: black;
+
+		}
+	}
+
+	.bouton1{
+		margin-top: 3%;
+		margin-bottom: 8%;
+		height: 70px;
+		border-radius: 20px;
+		background-color: $gris_noir;
+		p{
+			padding-top: 5%;
+			font-size: 20px;
+			text-align: center; 
+			color: white;
+			font-weight: bold;
+		}
+		.plus{
+			height: 30px;
+			width: 30px;
+			margin-left: 45%;
+			font-size: 24px;
+			font-weight: bolder;
+			color: white;
+		}
+	}
+
+	.bouton2{
+		margin-top: 3%;
+		margin-bottom: 8%;
+		margin-left: 33%;
+		height: 50px;
+		width: 33%;
+		border-radius: 30px;
+		background-color: $orange;
+		p{
+			padding-top: 10%;
+			font-size: 20px;
+			text-align: center; 
+			font-weight: bold;
+		}
+		
+	}
+
+	.actu{
+		height: 580px; 
+		background-color: $orange;
+		padding-left: 3%;
+
+		h1{
+			padding-top: 25px;
+			font-size: 30px;
+			color: white;
+			font-weight: bold;
+		}
+		.fleches{
+			display: flex;
+			flex-direction: row;
+			margin-left: 80%;
+			margin-top: -8%;
+			margin-bottom: 3%;
+			.flecheG{
+				background-image: url(../svg/fleche_gauche.svg);
+				background-repeat: no-repeat;
+				background-size: contain;
+				height: 30px;
+				width: 30px; 
+			}
+			.flecheD{
+				background-image: url(../svg/fleche_droite.svg);
+				background-repeat: no-repeat;
+				background-size: contain;
+				height: 30px;
+				width: 30px; 
+			}
+		}
+		.imgActu{
+			background-image: url(../img/actu.jpg);
+			background-repeat: no-repeat;
+			background-size: contain;
+			height: 250px; 
+			width: 350px;
+			margin-bottom: 3%;
+		}
+
+		h2{
+			font-size: 25px; 
+			font-weight: bold;
+			color: white;
+			margin-bottom: 3%;
+		}
+		p{
+			color: white; 
+			font-size: 18px;
+		}
+		
+		.plus{
+			height: 30px;
+			width: 30px;
+			margin-left: 5%;
+			margin-top: 5%;
+			font-size: 24px;
+			font-weight: bolder;
+			color: white;
+		}		
+	}
+	
+
+	.demarche{
+		margin-top: 5%;
+		height: 570px; 
+		background-color: $vert;
+		padding-left: 3%;
+
+		h1{
+			padding-top: 20px;
+			font-size: 30px;
+			color: $gris_noir;
+			font-weight: bold;
+			margin-bottom: 1%;
+		}
+		
+		.imgDemarche{
+			background-image: url(../img/demarche.jpg);
+			background-repeat: no-repeat;
+			background-size: contain;
+			height: 235px; 
+			width: 350px;
+			
+		}
+
+		h2{
+			font-size: 25px; 
+			font-weight: bold;
+			color: $gris_noir;
+			margin-bottom: 3%;
+		}
+		p{
+			color: $gris_noir; 
+			font-size: 18px;
+		}
+		
+		.plus{
+			height: 30px;
+			width: 30px;
+			margin-left: 5%;
+			margin-top: 5%;
+			font-size: 24px;
+			font-weight: bolder;
+			color: $gris_noir;
+		}		
+	}
+
+	.installations{
+		margin-top: 5%;
+		height: 565px; 
+		background-image: url(../img/points.svg);
+		
+
+		h1{
+			padding-top: 20px;
+			font-size: 30px;
+			color: $gris_noir;
+			font-weight: bold;
+			margin-bottom: 1%;
+			padding-left: 3%;
+		}
+		
+		.imgInstal{
+			background-image: url(../img/instal.jpg);
+			background-repeat: no-repeat;
+			background-size: contain;
+			height: 150px; 
+			width: 350px;
+			padding-left: 3%;
+			
+		}
+
+		h2{
+			font-size: 25px; 
+			font-weight: bold;
+			color: $gris_noir;
+			margin-bottom: 3%;
+			padding-left: 3%;
+		}
+		p{
+			color: $gris_noir; 
+			font-size: 18px;
+			padding-left: 3%;
+		}
+		
+		.plus{
+			height: 30px;
+			width: 30px;
+			margin-left: 5%;
+			margin-top: 5%;
+			font-size: 24px;
+			font-weight: bolder;
+			color: $gris_noir;
+			padding-left: 3%;
+		}		
+
+		.bouton3{
+			margin-top: 3%;
+			margin-bottom: 8%;
+			height: 70px;
+			border-radius: 20px;
+			background-color: $gris_noir;
+			p{
+				padding-top: 5%;
+				font-size: 20px;
+				text-align: center; 
+				color: white;
+				font-weight: bold;
+			}
+		}
+	}
+
+	.temoignages{
+		height: 580px; 
+		background-color: $beige;
+		padding-left: 3%;
+		margin-top: 5%;
+
+		h1{
+			padding-top: 25px;
+			font-size: 30px;
+			color: $gris_noir;
+			font-weight: bold;
+		}
+		
+		.flecheD{
+			background-image: url(../svg/fleche_droite.svg);
+			background-repeat: no-repeat;
+			background-size: contain;
+			height: 30px;
+			width: 30px; 
+			margin-left: 85%;
+			margin-top: -8%;
+			margin-bottom: 3%;
+		}
+		
+		.imgTem{
+			background-image: url(../img/tem.jpg);
+			background-repeat: no-repeat;
+			background-size: contain;
+			height: 250px; 
+			width: 350px;
+			margin-bottom: 3%;
+		}
+
+		h2{
+			font-size: 25px; 
+			font-weight: bold;
+			color: $gris_noir;
+			margin-bottom: 3%;
+		}
+		p{
+			color: $gris_noir; 
+			font-size: 18px;
+		}
+		
+		.plus{
+			height: 30px;
+			width: 30px;
+			margin-left: 5%;
+			margin-top: 5%;
+			font-size: 24px;
+			font-weight: bolder;
+			color: $gris_noir;
+		}		
+	}
+}
+
+/*@media screen and (min-width: 640px){
+	.bloc_top{
+		
+	}
+}*/
+
+
+
+
