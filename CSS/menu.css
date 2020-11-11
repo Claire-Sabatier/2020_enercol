@@ -2,10 +2,19 @@
 .header{
   display: flex;
 }
-.logo {
-    height: 40px;
-    margin-top: 40px;
+.header_logo{
+  margin-top: 40px;
     margin-left: 15px;
+  display: flex;
+  flex-direction: row;
+}
+.logo {
+  width: 40px;
+    height: 40px;
+    
+    background-image: url(../MAQUETTES/logo_ss_texte.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .menuClassique
@@ -45,12 +54,12 @@
   height: 32px;
   position: absolute;
   top: -7px;
-   margin-left: 250px;
+  margin-left: 130px;
   
   cursor: pointer;
   
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
+  opacity: 0;
+  z-index: 2; 
   
   -webkit-touch-callout: none;
 }
@@ -62,7 +71,7 @@
   width: 33px;
   height: 4px;
   margin-bottom: 5px;
-   margin-left: 250px;
+   margin-left: 130px;
   position: relative;
   
   background: rgb(179,209,67);
@@ -111,10 +120,10 @@
 {
   position: absolute;
   width: 200px;
-  margin: -100px -300px 0 90px;
+  margin: -100px -300px 0 -50px;
   padding: 50px;
   padding-top: 125px;
-  background: rgba(252,183,49,0.5);
+  background: rgba(252,183,49,0.8);
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   
@@ -137,10 +146,13 @@
 
 /* version pc */
 @media screen and (min-width: 640px) {
-  .logo {
-    height: 50px;
-    margin-top: 15px;
-    margin-left: 15%;
+  .header_logo {
+    height: 90px;
+    margin-top: 3px;
+    margin-left: 25%;
+    flex-direction: column;
+    vertical-align: middle;
+    background-color: white;
   }
   .menuToggle
   {

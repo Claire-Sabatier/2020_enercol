@@ -53,7 +53,18 @@ $gris_noir : rgb(109,111,113);
 		padding-top: 5%;
 		
 	}
-	
+	.titre_picto{
+		color: $orange;
+		font-weight: bold;	
+		text-align: center;
+		justify-content: center;
+		margin-top: 3%; 
+		margin-bottom: 3%;
+		h2{
+			font-size: 25px; 
+			 
+		}
+	}
 
 	.picto{
 		
@@ -63,13 +74,24 @@ $gris_noir : rgb(109,111,113);
 			display: flex;
 			flex-direction: row;
 			justify-content: space-around;
-
+			h2{
+				font-size: 25px;
+				text-align: center;
+				margin-left: -20px;
+			}
 			.coop{
 				height: 100px; 
 				width: 100px;
 				background-image: url(../img/picto_coop.svg);
 				background-size: contain;
 				background-repeat: no-repeat;
+			}
+			.cooperateurs h2{
+				color: $marron;
+			}
+
+			.photovoltaique h2{
+				color: $vert;
 			}
 
 			.photovolt{
@@ -89,6 +111,11 @@ $gris_noir : rgb(109,111,113);
 			display: flex;
 			flex-direction: row;
 			justify-content: space-around;
+			h2{
+				font-size: 25px;
+				text-align: center;
+				margin-left: -20px;
+			}
 
 			.prod{
 				height: 100px; 
@@ -98,6 +125,13 @@ $gris_noir : rgb(109,111,113);
 				background-repeat: no-repeat;
 			}
 
+			.production h2{
+				color: $orange;
+			}
+
+			.cap h2{
+				color: $bleu;
+			}
 			.capital{
 				height: 100px; 
 				width: 100px;
@@ -313,8 +347,7 @@ $gris_noir : rgb(109,111,113);
 			background-size: contain;
 			height: 150px; 
 			width: 350px;
-			padding-left: 3%;
-			
+			margin-left: 3%;			
 		}
 
 		h2{
@@ -413,11 +446,222 @@ $gris_noir : rgb(109,111,113);
 	}
 }
 
-/*@media screen and (min-width: 640px){
+@media screen and (min-width: 640px){
 	.bloc_top{
-		
+		margin-top: -10%;
+		height: 650px;
+		.img{	
+			background-size: cover;			
+			height: 550px;
+			
+		}
 	}
-}*/
+	.bloc_centre{
+		
+		
+
+		.logo_centre{
+			height: 100px; 
+			width: 100px;
+			margin-left: 45%;
+			padding-top: 0;
+			
+		}
+		.titre_picto{
+			h2{
+				font-size: 35px;  
+			}
+			p{
+				font-size: 25px;
+			}
+		}
+
+		.picto{
+			
+			margin-left: 8%;
+			display: flex;
+			flex-direction: row;
+			vertical-align: center;
+			
+			.partie1 {
+				margin-left: 25%;
+				
+				.photovoltaique{
+					margin-left: 25%;
+				}
+				
+				
+			}
+			
+			.partie2 {
+				margin-top: 0;				
+				margin-left: 8%;
+				.cap{
+					margin-left: 15%;
+								
+				}
+			}
+		}
+		.blocTxt_1{
+			flex-direction: row;
+			height: 250px;
+			.titre_bloc1{
+				
+				width: 150%; 
+				background-image:url(../img/points.svg);
+				h1{
+					margin-left: 5%;
+					margin-right: 4%;
+					font-size: 35px;
+					text-align: right;
+				}
+			}
+			.txt_bloc1{
+				background-color: white;
+				width: 150%;
+				p{
+					font-size: 23px;
+				}
+			}
+		}
+
+		.bouton1{
+			height: 70px;
+			width: 30%;
+			margin-left: 33%;
+			margin-bottom: 0;
+		}
+
+		.blocTxt_2{
+			flex-direction: row;
+			height: 250px;
+			.titre_bloc2{	
+				width: 150%; 
+				background-image:url(../img/points.svg);
+				h1{
+					margin-left: 5%;
+					margin-right: 4%;
+					font-size: 35px;
+					text-align: right;
+				}
+			}
+			.txt_bloc2{
+				background-color: white;
+				width: 150%;
+				p{
+					font-size: 23px;
+				}
+			}
+		}
+
+		.bouton2{
+			height: 70px;
+			width: 15%;
+			margin-left: 40%;
+			margin-bottom: 5%;
+			p{
+				font-size: 25px;
+				padding-top: 10%;
+			}
+		}
+
+
+		.actu{
+			display: flex;
+			flex-direction: row;
+			height: 90%;
+			.gauche{
+				width: 180%;
+				margin-left: 15%;
+
+			}
+			.droite{
+				margin-top: 5%;
+				margin-right: 2%;
+				.plus{
+					margin-top: 10%;
+					margin-left: 90%;
+				}
+			}
+		}
+		
+
+		.demarche{
+			display: flex;
+			flex-direction: row;
+			height: 90%;
+			.gauche{
+				width: 180%;
+				margin-left: 15%;
+
+			}
+			.droite{
+				margin-top: 5%;
+				margin-right: 2%;
+				.plus{
+					margin-top: 10%;
+					margin-left: 90%;
+				}
+			}
+		}
+
+		.installations{
+			height: 75%;
+			.bipartie{
+				display: flex;
+				flex-direction: row;
+				height: 80%;
+				.gauche{
+					width: 180%;
+					margin-left: 15%;
+
+				}
+				.droite{
+					margin-top: 2%;
+					margin-right: 2%;
+					.plus{
+						margin-top: 10%;
+						margin-left: 90%;
+					}
+				}
+			}
+					
+
+			.bouton3{
+				margin-top: 0;
+				margin-bottom: 2%;
+				height: 50px;
+				width: 25%;
+				margin-left: 33%;
+				
+				p{
+					padding-top: 3%;
+					font-size: 23px;
+					
+				}
+			}
+		}
+
+		.temoignages{
+			display: flex;
+			flex-direction: row;
+			height: 90%;
+			.gauche{
+				width: 180%;
+				margin-left: 15%;
+
+			}
+			.droite{
+				margin-top: 5%;
+				margin-right: 2%;
+				.plus{
+					margin-top: 10%;
+					margin-left: 90%;
+				}
+			}
+		}
+	}
+}
 
 
 
